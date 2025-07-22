@@ -46,17 +46,17 @@ This layer is responsible for extracting raw data from the sources and loading i
 This is the landing zone for all ingested data, stored in its original or near-original format.
 *   **Technology:** PostgreSQL database.
 *   **Purpose:** To maintain an immutable record of raw data, allowing for re-processing if transformation logic changes.
-*   **Schema:** Staging tables will be created to mirror the structure of the incoming raw data.
+*   **Schema:** The `raw_vehicle_data` table stores raw JSON data, mirroring the incoming structure, with a `JSONB` column for flexibility.
 
 ### 3.4. Data Transformation (dbt)
 This is the core transformation layer where raw data is cleaned, validated, and modeled into the final, structured schema.
 *   **Technology:** dbt (data build tool).
 *   **Language:** SQL (with Jinja templating).
 *   **Functionality:**
-    *   Define data models (e.g., `VehicleTrim`, `Performance`, `DimensionsCapacity`, etc.) as SQL views or tables.
+    *   Define data models (e.g., `VehicleTrim` as a materialized view, `Performance`, `DimensionsCapacity`, etc.) as SQL views or tables.
     *   Implement data quality checks and tests (e.g., ensuring `id` uniqueness, valid ranges for numerical attributes).
     *   Join and aggregate data from raw tables to create the refined data model.
-    *   Handle the `additionalFeatures` JSONB field for flexible attribute storage.
+    *   Handle the `additionalFeatures` JSONB field for flexible attribute storage, with GIN indexes for efficient querying.
     *   Generate documentation for all models and their relationships.
 *   **Interaction:** dbt commands (`dbt run`, `dbt test`, `dbt docs generate`) will be executed by Apache Airflow.
 
@@ -64,7 +64,7 @@ This is the core transformation layer where raw data is cleaned, validated, and 
 This layer holds the clean, transformed, and ready-to-use vehicle specification data.
 *   **Technology:** PostgreSQL database.
 *   **Purpose:** To serve as the single source of truth for vehicle specifications, optimized for querying and consumption.
-*   **Schema:** Tables will strictly adhere to the defined data model (as per `DESIGN_DOCUMENTATION.md`), with appropriate data types and relationships. `JSONB` will be used for the `additionalFeatures` column.
+*   **Schema:** Tables will strictly adhere to the defined data model (as per `DESIGN_DOCUMENTATION.md`), with appropriate data types and relationships. `JSONB` is used for the `additionalFeatures` column, with a GIN index for optimized querying.
 
 ### 3.6. Data Consumption
 This layer represents how the processed data will be utilized.

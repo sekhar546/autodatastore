@@ -25,7 +25,7 @@ classDiagram
         +Interior interior
         +SafetyDriverAssistance safetyDriverAssistance
         +PricingAvailability pricingAvailability
-        +Map~String, String~ additionalFeatures
+        +JSONB additionalFeatures
     }
 
     class Performance {
@@ -156,7 +156,7 @@ Represents a specific trim level of a vehicle model.
 *   `vehicleType`: (String) General type of vehicle (e.g., "Sedan", "SUV", "Truck", "Hatchback").
 *   `countryOfOrigin`: (String) Country where the manufacturer is based.
 *   `assemblyPlantLocation`: (String) Location of the primary assembly plant for this trim.
-*   `additionalFeatures`: (Map<String, String>) A flexible key-value store for new or unstructured features not explicitly defined in the schema.
+*   `additionalFeatures`: (JSONB) A flexible JSONB field for new or unstructured features not explicitly defined in the schema. This allows for dynamic schema extension.
 
 ### 3.2. Performance
 Details related to the vehicle's engine and driving dynamics.
