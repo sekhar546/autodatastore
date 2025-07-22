@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="make", model=get_where_subquery(ref('vehicle_trims'))) }}

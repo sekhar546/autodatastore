@@ -1,0 +1,115 @@
+version: 2
+
+models:
+  - name: vehicle_trims
+    description: "Core table for vehicle trim level information."
+    columns:
+      - name: vehicle_trim_id
+        description: "Unique identifier for the vehicle trim."
+        tests:
+          - unique
+          - not_null
+      - name: additional_features_json
+        description: "Flexible JSONB field for storing additional vehicle features not covered by core schema. Example features: 360_camera (boolean), sunroof_type (string), parking_assist (boolean). Can be extended without schema changes."
+      - name: make
+        description: "Manufacturer of the vehicle."
+        tests:
+          - not_null
+      - name: model
+        description: "Model name of the vehicle."
+        tests:
+          - not_null
+      - name: year
+        description: "Model year of the vehicle."
+        tests:
+          - not_null
+      - name: trim_name
+        description: "Specific trim level."
+        tests:
+          - not_null
+
+  - name: performance_specs
+    description: "Details related to the vehicle's engine and driving dynamics."
+    columns:
+      - name: performance_id
+        description: "Unique identifier for the performance specifications."
+        tests:
+          - unique
+          - not_null
+      - name: engine_type
+        description: "Type of engine (e.g., Inline-4, V6, Electric, Hybrid)."
+        tests:
+          - not_null
+      - name: horsepower
+        description: "Engine horsepower."
+        tests:
+          - not_null
+
+  - name: dimensions_capacity
+    description: "Physical dimensions and capacities of the vehicle."
+    columns:
+      - name: dimensions_capacity_id
+        description: "Unique identifier for the dimensions and capacity specifications."
+        tests:
+          - unique
+          - not_null
+      - name: length_mm
+        description: "Overall length in millimeters."
+        tests:
+          - not_null
+      - name: width_mm
+        description: "Overall width in millimeters."
+        tests:
+          - not_null
+
+  - name: exterior_features
+    description: "Attributes related to the vehicle's exterior features."
+    columns:
+      - name: exterior_feature_id
+        description: "Unique identifier for the exterior specifications."
+        tests:
+          - unique
+          - not_null
+      - name: body_style
+        description: "Specific body style."
+        tests:
+          - not_null
+
+  - name: interior_features
+    description: "Attributes related to the vehicle's interior features and comfort."
+    columns:
+      - name: interior_feature_id
+        description: "Unique identifier for the interior specifications."
+        tests:
+          - unique
+          - not_null
+      - name: seating_material
+        description: "Material of the seats."
+        tests:
+          - not_null
+
+  - name: safety_features
+    description: "Attributes related to safety features and driver assistance systems."
+    columns:
+      - name: safety_feature_id
+        description: "Unique identifier for the safety and driver assistance specifications."
+        tests:
+          - unique
+          - not_null
+      - name: number_of_airbags
+        description: "Total number of airbags."
+        tests:
+          - not_null
+
+  - name: pricing_availability
+    description: "Attributes related to pricing and market availability."
+    columns:
+      - name: pricing_availability_id
+        description: "Unique identifier for the pricing and availability specifications."
+        tests:
+          - unique
+          - not_null
+      - name: msrp_cad
+        description: "Manufacturer's Suggested Retail Price in Canadian Dollars."
+        tests:
+          - not_null

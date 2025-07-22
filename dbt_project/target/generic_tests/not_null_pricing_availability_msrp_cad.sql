@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="msrp_cad", model=get_where_subquery(ref('pricing_availability'))) }}

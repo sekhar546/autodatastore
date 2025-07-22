@@ -1,0 +1,27 @@
+name: 'vehicle_data_system'
+version: '1.0.0'
+config-version: 2
+
+profile: 'vehicle_data_system'
+
+# Specify the profiles directory relative to the project root
+# This ensures dbt looks for profiles.yml within the project
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to clean out on `dbt clean`
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
+models:
+  vehicle_data_system:
+    # Config all models in this project to be materialized as views.
+    # You can override this for specific models in the individual model files.
+    +materialized: view

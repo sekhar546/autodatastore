@@ -1,0 +1,14 @@
+[project]
+name = "vehicle-data-system"
+version = "0.1.0"
+description = "Data storage system for personal vehicle specifications in Canada."
+dependencies = [
+    "dbt-core",
+    "dbt-postgres",
+    "pandas",
+    "requests",
+    "beautifulsoup4",
+    "jupyterlab",
+    "python-dotenv",
+    "types-psycopg2",
+]

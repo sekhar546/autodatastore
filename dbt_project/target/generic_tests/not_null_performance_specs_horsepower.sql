@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="horsepower", model=get_where_subquery(ref('performance_specs'))) }}

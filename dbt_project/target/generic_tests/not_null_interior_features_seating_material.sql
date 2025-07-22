@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="seating_material", model=get_where_subquery(ref('interior_features'))) }}

@@ -1,0 +1,24 @@
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select length_mm
+from "vehicle_specs_db"."public"."dimensions_capacity"
+where length_mm is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test

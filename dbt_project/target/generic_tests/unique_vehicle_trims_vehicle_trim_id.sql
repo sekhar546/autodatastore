@@ -1,0 +1,1 @@
+{{ test_unique(column_name="vehicle_trim_id", model=get_where_subquery(ref('vehicle_trims'))) }}

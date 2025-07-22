@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="body_style", model=get_where_subquery(ref('exterior_features'))) }}

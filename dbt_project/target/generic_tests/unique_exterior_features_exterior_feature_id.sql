@@ -1,0 +1,1 @@
+{{ test_unique(column_name="exterior_feature_id", model=get_where_subquery(ref('exterior_features'))) }}
