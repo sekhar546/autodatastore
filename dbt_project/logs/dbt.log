@@ -4370,3 +4370,1579 @@ with relation as (
 [0m18:19:29.293603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51595a5690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51595a5150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51595a5590>]}
 [0m18:19:29.294533 [debug] [MainThread]: Flushing usage events
 [0m18:19:29.468454 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:00:08.953311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf2da77d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf2da47950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf2db7c490>]}
+
+
+============================== 22:00:08.960164 | 432fcfdf-4f88-4910-9c0b-b3ef7cb836b5 ==============================
+[0m22:00:08.960164 [info ] [MainThread]: Running with dbt=1.10.4
+[0m22:00:08.961517 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/raja/autodatastore/dbt_project/logs', 'fail_fast': 'False', 'profiles_dir': '/home/raja/autodatastore/dbt_project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:00:08.971224 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'POSTGRES_HOST'
+[0m22:00:08.974300 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.106018044, "process_in_blocks": "65208", "process_kernel_time": 0.434428, "process_mem_max_rss": "118856", "process_out_blocks": "16", "process_user_time": 5.120054}
+[0m22:00:08.978663 [debug] [MainThread]: Command `dbt run` failed at 22:00:08.977628 after 0.11 seconds
+[0m22:00:08.979807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf2dcfbe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf32beb490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf2dbf85d0>]}
+[0m22:00:08.980619 [debug] [MainThread]: Flushing usage events
+[0m22:00:09.189608 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:04:19.280888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0272a80410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0272bec3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0272becbd0>]}
+
+
+============================== 22:04:19.286952 | ab1944d9-865b-465a-8821-64531c4e4a84 ==============================
+[0m22:04:19.286952 [info ] [MainThread]: Running with dbt=1.10.4
+[0m22:04:19.288137 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/raja/autodatastore/dbt_project', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/raja/autodatastore/dbt_project/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m22:04:19.298893 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'POSTGRES_HOST'
+[0m22:04:19.301581 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.10896256, "process_in_blocks": "0", "process_kernel_time": 0.545951, "process_mem_max_rss": "118640", "process_out_blocks": "8", "process_user_time": 4.812459}
+[0m22:04:19.303017 [debug] [MainThread]: Command `dbt run` failed at 22:04:19.302679 after 0.11 seconds
+[0m22:04:19.304716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0277c33550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0272a3fdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0272bec290>]}
+[0m22:04:19.305876 [debug] [MainThread]: Flushing usage events
+[0m22:04:19.513553 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:04:46.856746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f002a767850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f002a7b9210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f002a7c71d0>]}
+
+
+============================== 22:04:46.861684 | 6379885a-de0b-49fd-94e4-d394b157c83a ==============================
+[0m22:04:46.861684 [info ] [MainThread]: Running with dbt=1.10.4
+[0m22:04:46.863223 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/raja/autodatastore/dbt_project', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/raja/autodatastore/dbt_project/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:04:46.877717 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'POSTGRES_HOST'
+[0m22:04:46.879353 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.118206546, "process_in_blocks": "0", "process_kernel_time": 0.319913, "process_mem_max_rss": "118784", "process_out_blocks": "8", "process_user_time": 5.178596}
+[0m22:04:46.880713 [debug] [MainThread]: Command `dbt run` failed at 22:04:46.880368 after 0.12 seconds
+[0m22:04:46.882097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f002a7c6e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f002f933610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f002ac280d0>]}
+[0m22:04:46.883544 [debug] [MainThread]: Flushing usage events
+[0m22:04:47.006682 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:05:23.067727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f35341780d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3534172590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3535e91e50>]}
+
+
+============================== 22:05:23.072564 | 759f1e53-cd77-4841-8120-6e5d9b211941 ==============================
+[0m22:05:23.072564 [info ] [MainThread]: Running with dbt=1.10.4
+[0m22:05:23.073856 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/raja/autodatastore/dbt_project/logs', 'profiles_dir': '/home/raja/autodatastore/dbt_project', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:05:23.634583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '759f1e53-cd77-4841-8120-6e5d9b211941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f353359dc10>]}
+[0m22:05:23.735748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '759f1e53-cd77-4841-8120-6e5d9b211941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3536c9f210>]}
+[0m22:05:23.738398 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m22:05:23.897013 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m22:05:24.090230 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m22:05:24.090984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '759f1e53-cd77-4841-8120-6e5d9b211941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3535144590>]}
+[0m22:05:26.260653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '759f1e53-cd77-4841-8120-6e5d9b211941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f353258d6d0>]}
+[0m22:05:26.381039 [debug] [MainThread]: Wrote artifact WritableManifest to /home/raja/autodatastore/dbt_project/target/manifest.json
+[0m22:05:26.384527 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/raja/autodatastore/dbt_project/target/semantic_manifest.json
+[0m22:05:26.420105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '759f1e53-cd77-4841-8120-6e5d9b211941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3530d68710>]}
+[0m22:05:26.420917 [info ] [MainThread]: Found 8 models, 26 data tests, 434 macros
+[0m22:05:26.421498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '759f1e53-cd77-4841-8120-6e5d9b211941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f353471aad0>]}
+[0m22:05:26.424205 [info ] [MainThread]: 
+[0m22:05:26.425329 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:05:26.426192 [info ] [MainThread]: 
+[0m22:05:26.427414 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:05:26.434478 [debug] [ThreadPool]: Acquiring new postgres connection 'list_vehicle_specs_db'
+[0m22:05:26.529511 [debug] [ThreadPool]: Using postgres connection "list_vehicle_specs_db"
+[0m22:05:26.530498 [debug] [ThreadPool]: On list_vehicle_specs_db: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "connection_name": "list_vehicle_specs_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:05:26.531422 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:05:26.563185 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.032 seconds
+[0m22:05:26.568352 [debug] [ThreadPool]: On list_vehicle_specs_db: Close
+[0m22:05:26.572704 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_vehicle_specs_db, now list_vehicle_specs_db_public)
+[0m22:05:26.592500 [debug] [ThreadPool]: Using postgres connection "list_vehicle_specs_db_public"
+[0m22:05:26.593651 [debug] [ThreadPool]: On list_vehicle_specs_db_public: BEGIN
+[0m22:05:26.594783 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:05:26.603280 [debug] [ThreadPool]: SQL status: BEGIN in 0.008 seconds
+[0m22:05:26.604345 [debug] [ThreadPool]: Using postgres connection "list_vehicle_specs_db_public"
+[0m22:05:26.605663 [debug] [ThreadPool]: On list_vehicle_specs_db_public: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "connection_name": "list_vehicle_specs_db_public"} */
+select
+      'vehicle_specs_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'vehicle_specs_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'vehicle_specs_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m22:05:26.615281 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.007 seconds
+[0m22:05:26.618306 [debug] [ThreadPool]: On list_vehicle_specs_db_public: ROLLBACK
+[0m22:05:26.619760 [debug] [ThreadPool]: On list_vehicle_specs_db_public: Close
+[0m22:05:26.629710 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:26.630477 [debug] [MainThread]: On master: BEGIN
+[0m22:05:26.631802 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:05:26.642271 [debug] [MainThread]: SQL status: BEGIN in 0.010 seconds
+[0m22:05:26.643298 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:26.644669 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:05:26.654886 [debug] [MainThread]: SQL status: SELECT 0 in 0.009 seconds
+[0m22:05:26.657621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '759f1e53-cd77-4841-8120-6e5d9b211941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3530d1a3d0>]}
+[0m22:05:26.659309 [debug] [MainThread]: On master: ROLLBACK
+[0m22:05:26.660968 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:26.661892 [debug] [MainThread]: On master: BEGIN
+[0m22:05:26.664255 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m22:05:26.665304 [debug] [MainThread]: On master: COMMIT
+[0m22:05:26.666458 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:26.667571 [debug] [MainThread]: On master: COMMIT
+[0m22:05:26.669352 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m22:05:26.670057 [debug] [MainThread]: On master: Close
+[0m22:05:26.675712 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.stg_vehicle_data
+[0m22:05:26.677501 [info ] [Thread-1 (]: 1 of 8 START sql view model public.stg_vehicle_data ............................ [RUN]
+[0m22:05:26.680886 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_vehicle_specs_db_public, now model.vehicle_data_system.stg_vehicle_data)
+[0m22:05:26.682233 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.stg_vehicle_data
+[0m22:05:26.701514 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.stg_vehicle_data"
+[0m22:05:26.703179 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.stg_vehicle_data
+[0m22:05:26.789235 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.stg_vehicle_data"
+[0m22:05:26.790468 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:05:26.792458 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: BEGIN
+[0m22:05:26.794716 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:05:26.804766 [debug] [Thread-1 (]: SQL status: BEGIN in 0.010 seconds
+[0m22:05:26.805996 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:05:26.807481 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.stg_vehicle_data"} */
+
+  create view "vehicle_specs_db"."public"."stg_vehicle_data__dbt_tmp"
+    
+    
+  as (
+    -- models/staging/stg_vehicle_data.sql
+
+WITH source_data AS (
+    SELECT
+        id,
+        ingestion_timestamp,
+        raw_json
+    FROM
+        raw_vehicle_data
+)
+
+SELECT
+    id AS raw_id,
+    ingestion_timestamp,
+    raw_json ->> 'make' AS make,
+    raw_json ->> 'model' AS model,
+    (raw_json ->> 'year')::INT AS year,
+    raw_json ->> 'trimName' AS trim_name,
+    raw_json ->> 'vehicleType' AS vehicle_type,
+    raw_json ->> 'countryOfOrigin' AS country_of_origin,
+    raw_json ->> 'assemblyPlantLocation' AS assembly_plant_location,
+    raw_json -> 'performance' AS performance_json,
+    raw_json -> 'dimensionsCapacity' AS dimensions_capacity_json,
+    raw_json -> 'exterior' AS exterior_json,
+    raw_json -> 'interior' AS interior_json,
+    raw_json -> 'safetyDriverAssistance' AS safety_driver_assistance_json,
+    raw_json -> 'pricingAvailability' AS pricing_availability_json,
+    raw_json -> 'additionalFeatures' AS additional_features_json
+FROM
+    source_data
+  );
+[0m22:05:26.813690 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "raw_vehicle_data" does not exist
+LINE 15:         raw_vehicle_data
+                 ^
+
+[0m22:05:26.820886 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: ROLLBACK
+[0m22:05:26.823073 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: Close
+[0m22:05:26.841708 [debug] [Thread-1 (]: Database Error in model stg_vehicle_data (models/staging/stg_vehicle_data.sql)
+  relation "raw_vehicle_data" does not exist
+  LINE 15:         raw_vehicle_data
+                   ^
+  compiled code at target/run/vehicle_data_system/models/staging/stg_vehicle_data.sql
+[0m22:05:26.845614 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '759f1e53-cd77-4841-8120-6e5d9b211941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f35301e0a50>]}
+[0m22:05:26.848149 [error] [Thread-1 (]: 1 of 8 ERROR creating sql view model public.stg_vehicle_data ................... [[31mERROR[0m in 0.16s]
+[0m22:05:26.850160 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.stg_vehicle_data
+[0m22:05:26.852453 [debug] [Thread-4 (]: Marking all children of 'model.vehicle_data_system.stg_vehicle_data' to be skipped because of status 'error'.  Reason: Database Error in model stg_vehicle_data (models/staging/stg_vehicle_data.sql)
+  relation "raw_vehicle_data" does not exist
+  LINE 15:         raw_vehicle_data
+                   ^
+  compiled code at target/run/vehicle_data_system/models/staging/stg_vehicle_data.sql.
+[0m22:05:26.856725 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.dimensions_capacity
+[0m22:05:26.858606 [info ] [Thread-1 (]: 2 of 8 SKIP relation public.dimensions_capacity ................................ [[33mSKIP[0m]
+[0m22:05:26.860541 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.dimensions_capacity
+[0m22:05:26.861863 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.exterior_features
+[0m22:05:26.863194 [info ] [Thread-1 (]: 3 of 8 SKIP relation public.exterior_features .................................. [[33mSKIP[0m]
+[0m22:05:26.864332 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.exterior_features
+[0m22:05:26.865631 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.interior_features
+[0m22:05:26.867076 [info ] [Thread-1 (]: 4 of 8 SKIP relation public.interior_features .................................. [[33mSKIP[0m]
+[0m22:05:26.868805 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.interior_features
+[0m22:05:26.870722 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.performance_specs
+[0m22:05:26.872137 [info ] [Thread-1 (]: 5 of 8 SKIP relation public.performance_specs .................................. [[33mSKIP[0m]
+[0m22:05:26.873646 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.performance_specs
+[0m22:05:26.875440 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.pricing_availability
+[0m22:05:26.877163 [info ] [Thread-1 (]: 6 of 8 SKIP relation public.pricing_availability ............................... [[33mSKIP[0m]
+[0m22:05:26.878765 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.pricing_availability
+[0m22:05:26.880012 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.safety_features
+[0m22:05:26.881266 [info ] [Thread-1 (]: 7 of 8 SKIP relation public.safety_features .................................... [[33mSKIP[0m]
+[0m22:05:26.882094 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.safety_features
+[0m22:05:26.882796 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.vehicle_trims
+[0m22:05:26.883941 [info ] [Thread-1 (]: 8 of 8 SKIP relation public.vehicle_trims ...................................... [[33mSKIP[0m]
+[0m22:05:26.885500 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.vehicle_trims
+[0m22:05:26.889129 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:26.890297 [debug] [MainThread]: On master: BEGIN
+[0m22:05:26.890966 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:05:26.900181 [debug] [MainThread]: SQL status: BEGIN in 0.009 seconds
+[0m22:05:26.901051 [debug] [MainThread]: On master: COMMIT
+[0m22:05:26.901893 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:26.902742 [debug] [MainThread]: On master: COMMIT
+[0m22:05:26.904136 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m22:05:26.905145 [debug] [MainThread]: On master: Close
+[0m22:05:26.906457 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:05:26.907497 [debug] [MainThread]: Connection 'model.vehicle_data_system.stg_vehicle_data' was properly closed.
+[0m22:05:26.908872 [info ] [MainThread]: 
+[0m22:05:26.911429 [info ] [MainThread]: Finished running 8 view models in 0 hours 0 minutes and 0.48 seconds (0.48s).
+[0m22:05:26.920442 [debug] [MainThread]: Command end result
+[0m22:05:26.998446 [debug] [MainThread]: Wrote artifact WritableManifest to /home/raja/autodatastore/dbt_project/target/manifest.json
+[0m22:05:27.002330 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/raja/autodatastore/dbt_project/target/semantic_manifest.json
+[0m22:05:27.047620 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/raja/autodatastore/dbt_project/target/run_results.json
+[0m22:05:27.048589 [info ] [MainThread]: 
+[0m22:05:27.062183 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m22:05:27.063229 [info ] [MainThread]: 
+[0m22:05:27.064673 [error] [MainThread]: [31mFailure in model stg_vehicle_data (models/staging/stg_vehicle_data.sql)[0m
+[0m22:05:27.066393 [error] [MainThread]:   Database Error in model stg_vehicle_data (models/staging/stg_vehicle_data.sql)
+  relation "raw_vehicle_data" does not exist
+  LINE 15:         raw_vehicle_data
+                   ^
+  compiled code at target/run/vehicle_data_system/models/staging/stg_vehicle_data.sql
+[0m22:05:27.078289 [info ] [MainThread]: 
+[0m22:05:27.079497 [info ] [MainThread]:   compiled code at target/compiled/vehicle_data_system/models/staging/stg_vehicle_data.sql
+[0m22:05:27.080558 [info ] [MainThread]: 
+[0m22:05:27.081822 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=7 NO-OP=0 TOTAL=8
+[0m22:05:27.093871 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.100887, "process_in_blocks": "18856", "process_kernel_time": 0.506389, "process_mem_max_rss": "147772", "process_out_blocks": "3120", "process_user_time": 8.061721}
+[0m22:05:27.095365 [debug] [MainThread]: Command `dbt run` failed at 22:05:27.095078 after 4.11 seconds
+[0m22:05:27.096583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3534173bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3539377710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f35350a4510>]}
+[0m22:05:27.097786 [debug] [MainThread]: Flushing usage events
+[0m22:05:27.287609 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:52:32.770120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e05162490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e0588ea10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e0515fa10>]}
+
+
+============================== 22:52:32.778494 | d4edb8a4-019d-4f2a-b7d5-4863c2dc56da ==============================
+[0m22:52:32.778494 [info ] [MainThread]: Running with dbt=1.10.4
+[0m22:52:32.780345 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/raja/autodatastore/dbt_project', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/raja/autodatastore/dbt_project/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:52:33.234886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e07f0fb50>]}
+[0m22:52:33.390717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e07c2ee10>]}
+[0m22:52:33.392980 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m22:52:33.644678 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m22:52:34.018010 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:52:34.020210 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:52:34.113801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e0397c2d0>]}
+[0m22:52:34.382409 [debug] [MainThread]: Wrote artifact WritableManifest to /home/raja/autodatastore/dbt_project/target/manifest.json
+[0m22:52:34.384705 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/raja/autodatastore/dbt_project/target/semantic_manifest.json
+[0m22:52:34.414737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e079c9950>]}
+[0m22:52:34.415547 [info ] [MainThread]: Found 8 models, 26 data tests, 434 macros
+[0m22:52:34.417853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e03d7a8d0>]}
+[0m22:52:34.421903 [info ] [MainThread]: 
+[0m22:52:34.422583 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:52:34.423239 [info ] [MainThread]: 
+[0m22:52:34.424295 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:52:34.433966 [debug] [ThreadPool]: Acquiring new postgres connection 'list_vehicle_specs_db'
+[0m22:52:34.530114 [debug] [ThreadPool]: Using postgres connection "list_vehicle_specs_db"
+[0m22:52:34.531250 [debug] [ThreadPool]: On list_vehicle_specs_db: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "connection_name": "list_vehicle_specs_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:52:34.532074 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:52:34.554583 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.022 seconds
+[0m22:52:34.558775 [debug] [ThreadPool]: On list_vehicle_specs_db: Close
+[0m22:52:34.569677 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_vehicle_specs_db, now list_vehicle_specs_db_public)
+[0m22:52:34.590266 [debug] [ThreadPool]: Using postgres connection "list_vehicle_specs_db_public"
+[0m22:52:34.591421 [debug] [ThreadPool]: On list_vehicle_specs_db_public: BEGIN
+[0m22:52:34.591993 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:52:34.603893 [debug] [ThreadPool]: SQL status: BEGIN in 0.012 seconds
+[0m22:52:34.604639 [debug] [ThreadPool]: Using postgres connection "list_vehicle_specs_db_public"
+[0m22:52:34.605194 [debug] [ThreadPool]: On list_vehicle_specs_db_public: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "connection_name": "list_vehicle_specs_db_public"} */
+select
+      'vehicle_specs_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'vehicle_specs_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'vehicle_specs_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m22:52:34.615871 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.010 seconds
+[0m22:52:34.621335 [debug] [ThreadPool]: On list_vehicle_specs_db_public: ROLLBACK
+[0m22:52:34.622764 [debug] [ThreadPool]: On list_vehicle_specs_db_public: Close
+[0m22:52:34.633219 [debug] [MainThread]: Using postgres connection "master"
+[0m22:52:34.633881 [debug] [MainThread]: On master: BEGIN
+[0m22:52:34.634470 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:52:34.642499 [debug] [MainThread]: SQL status: BEGIN in 0.008 seconds
+[0m22:52:34.643159 [debug] [MainThread]: Using postgres connection "master"
+[0m22:52:34.644020 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:52:34.661699 [debug] [MainThread]: SQL status: SELECT 0 in 0.016 seconds
+[0m22:52:34.663462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e04588d10>]}
+[0m22:52:34.664723 [debug] [MainThread]: On master: ROLLBACK
+[0m22:52:34.665961 [debug] [MainThread]: Using postgres connection "master"
+[0m22:52:34.667107 [debug] [MainThread]: On master: BEGIN
+[0m22:52:34.669346 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m22:52:34.670581 [debug] [MainThread]: On master: COMMIT
+[0m22:52:34.671613 [debug] [MainThread]: Using postgres connection "master"
+[0m22:52:34.672185 [debug] [MainThread]: On master: COMMIT
+[0m22:52:34.673274 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m22:52:34.673803 [debug] [MainThread]: On master: Close
+[0m22:52:34.680319 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.stg_vehicle_data
+[0m22:52:34.681354 [info ] [Thread-1 (]: 1 of 8 START sql view model public.stg_vehicle_data ............................ [RUN]
+[0m22:52:34.682516 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_vehicle_specs_db_public, now model.vehicle_data_system.stg_vehicle_data)
+[0m22:52:34.683466 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.stg_vehicle_data
+[0m22:52:34.699315 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.stg_vehicle_data"
+[0m22:52:34.701293 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.stg_vehicle_data
+[0m22:52:34.830256 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.stg_vehicle_data"
+[0m22:52:34.831991 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:52:34.832920 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: BEGIN
+[0m22:52:34.833544 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:52:34.851546 [debug] [Thread-1 (]: SQL status: BEGIN in 0.018 seconds
+[0m22:52:34.853040 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:52:34.854627 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.stg_vehicle_data"} */
+
+  create view "vehicle_specs_db"."public"."stg_vehicle_data__dbt_tmp"
+    
+    
+  as (
+    -- models/staging/stg_vehicle_data.sql
+
+WITH source_data AS (
+    SELECT
+        id,
+        ingestion_timestamp,
+        raw_json
+    FROM
+        raw_vehicle_data
+)
+
+SELECT
+    id AS raw_id,
+    ingestion_timestamp,
+    raw_json ->> 'make' AS make,
+    raw_json ->> 'model' AS model,
+    (raw_json ->> 'year')::INT AS year,
+    raw_json ->> 'trimName' AS trim_name,
+    raw_json ->> 'vehicleType' AS vehicle_type,
+    raw_json ->> 'countryOfOrigin' AS country_of_origin,
+    raw_json ->> 'assemblyPlantLocation' AS assembly_plant_location,
+    raw_json -> 'performance' AS performance_json,
+    raw_json -> 'dimensionsCapacity' AS dimensions_capacity_json,
+    raw_json -> 'exterior' AS exterior_json,
+    raw_json -> 'interior' AS interior_json,
+    raw_json -> 'safetyDriverAssistance' AS safety_driver_assistance_json,
+    raw_json -> 'pricingAvailability' AS pricing_availability_json,
+    raw_json -> 'additionalFeatures' AS additional_features_json
+FROM
+    source_data
+  );
+[0m22:52:34.913363 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.057 seconds
+[0m22:52:34.933024 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:52:34.933694 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.stg_vehicle_data"} */
+alter table "vehicle_specs_db"."public"."stg_vehicle_data__dbt_tmp" rename to "stg_vehicle_data"
+[0m22:52:34.935567 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:52:34.977542 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: COMMIT
+[0m22:52:34.979440 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:52:34.980780 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: COMMIT
+[0m22:52:35.115852 [debug] [Thread-1 (]: SQL status: COMMIT in 0.134 seconds
+[0m22:52:35.139366 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."stg_vehicle_data__dbt_backup"
+[0m22:52:35.165998 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:52:35.171887 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.stg_vehicle_data"} */
+drop view if exists "vehicle_specs_db"."public"."stg_vehicle_data__dbt_backup" cascade
+[0m22:52:35.174220 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:52:35.181932 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: Close
+[0m22:52:35.192814 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e02478d90>]}
+[0m22:52:35.194706 [info ] [Thread-1 (]: 1 of 8 OK created sql view model public.stg_vehicle_data ....................... [[32mCREATE VIEW[0m in 0.50s]
+[0m22:52:35.196473 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.stg_vehicle_data
+[0m22:52:35.203749 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.dimensions_capacity
+[0m22:52:35.205273 [info ] [Thread-1 (]: 2 of 8 START sql view model public.dimensions_capacity ......................... [RUN]
+[0m22:52:35.208133 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.stg_vehicle_data, now model.vehicle_data_system.dimensions_capacity)
+[0m22:52:35.209459 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.dimensions_capacity
+[0m22:52:35.221301 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.dimensions_capacity"
+[0m22:52:35.223208 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.dimensions_capacity
+[0m22:52:35.232797 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.dimensions_capacity"
+[0m22:52:35.234544 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:52:35.235852 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: BEGIN
+[0m22:52:35.237138 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:52:35.251993 [debug] [Thread-1 (]: SQL status: BEGIN in 0.015 seconds
+[0m22:52:35.253322 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:52:35.254814 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.dimensions_capacity"} */
+
+  create view "vehicle_specs_db"."public"."dimensions_capacity__dbt_tmp"
+    
+    
+  as (
+    -- models/core/dimensions_capacity.sql
+
+SELECT
+    raw_id AS dimensions_capacity_id,
+    (dimensions_capacity_json ->> 'lengthMm')::INT AS length_mm,
+    (dimensions_capacity_json ->> 'widthMm')::INT AS width_mm,
+    (dimensions_capacity_json ->> 'heightMm')::INT AS height_mm,
+    (dimensions_capacity_json ->> 'wheelbaseMm')::INT AS wheelbase_mm,
+    (dimensions_capacity_json ->> 'curbWeightKg')::INT AS curb_weight_kg,
+    (dimensions_capacity_json ->> 'grossVehicleWeightRatingKg')::INT AS gross_vehicle_weight_rating_kg,
+    (dimensions_capacity_json ->> 'seatingCapacity')::INT AS seating_capacity,
+    (dimensions_capacity_json ->> 'numberOfDoors')::INT AS number_of_doors,
+    (dimensions_capacity_json ->> 'cargoVolumeLiters')::NUMERIC AS cargo_volume_liters,
+    (dimensions_capacity_json ->> 'towingCapacityKg')::INT AS towing_capacity_kg,
+    (dimensions_capacity_json ->> 'groundClearanceMm')::INT AS ground_clearance_mm
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:52:35.262020 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.006 seconds
+[0m22:52:35.270007 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:52:35.271190 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.dimensions_capacity"} */
+alter table "vehicle_specs_db"."public"."dimensions_capacity__dbt_tmp" rename to "dimensions_capacity"
+[0m22:52:35.272846 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:52:35.275217 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: COMMIT
+[0m22:52:35.276231 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:52:35.279214 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: COMMIT
+[0m22:52:35.283976 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m22:52:35.288963 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."dimensions_capacity__dbt_backup"
+[0m22:52:35.291057 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:52:35.291728 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.dimensions_capacity"} */
+drop view if exists "vehicle_specs_db"."public"."dimensions_capacity__dbt_backup" cascade
+[0m22:52:35.293394 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:52:35.300558 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: Close
+[0m22:52:35.303384 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e02320910>]}
+[0m22:52:35.305444 [info ] [Thread-1 (]: 2 of 8 OK created sql view model public.dimensions_capacity .................... [[32mCREATE VIEW[0m in 0.10s]
+[0m22:52:35.307345 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.dimensions_capacity
+[0m22:52:35.308745 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.exterior_features
+[0m22:52:35.310549 [info ] [Thread-1 (]: 3 of 8 START sql view model public.exterior_features ........................... [RUN]
+[0m22:52:35.316223 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.dimensions_capacity, now model.vehicle_data_system.exterior_features)
+[0m22:52:35.319425 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.exterior_features
+[0m22:52:35.326822 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.exterior_features"
+[0m22:52:35.328939 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.exterior_features
+[0m22:52:35.345485 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.exterior_features"
+[0m22:52:35.347257 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:52:35.348349 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: BEGIN
+[0m22:52:35.349650 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:52:35.364615 [debug] [Thread-1 (]: SQL status: BEGIN in 0.015 seconds
+[0m22:52:35.365980 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:52:35.367513 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.exterior_features"} */
+
+  create view "vehicle_specs_db"."public"."exterior_features__dbt_tmp"
+    
+    
+  as (
+    -- models/core/exterior_features.sql
+
+SELECT
+    raw_id AS exterior_feature_id,
+    (exterior_json ->> 'bodyStyle') AS body_style,
+    (exterior_json ->> 'wheelSizeInches')::NUMERIC AS wheel_size_inches,
+    (exterior_json ->> 'tireDimensions') AS tire_dimensions,
+    (exterior_json ->> 'tireType') AS tire_type,
+    (exterior_json -> 'exteriorColorOptions') AS exterior_color_options,
+    (exterior_json ->> 'headlightType') AS headlight_type,
+    (exterior_json -> 'headlightFeatures') AS headlight_features,
+    (exterior_json ->> 'tailLightType') AS tail_light_type,
+    (exterior_json -> 'tailLightFeatures') AS tail_light_features,
+    (exterior_json ->> 'sunroofType') AS sunroof_type,
+    (exterior_json ->> 'hasPowerLiftgate')::BOOLEAN AS has_power_liftgate
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:52:35.405981 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.037 seconds
+[0m22:52:35.423383 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:52:35.424534 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.exterior_features"} */
+alter table "vehicle_specs_db"."public"."exterior_features__dbt_tmp" rename to "exterior_features"
+[0m22:52:35.426743 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:52:35.435524 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: COMMIT
+[0m22:52:35.440191 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:52:35.441423 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: COMMIT
+[0m22:52:35.445201 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m22:52:35.452380 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."exterior_features__dbt_backup"
+[0m22:52:35.460538 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:52:35.462029 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.exterior_features"} */
+drop view if exists "vehicle_specs_db"."public"."exterior_features__dbt_backup" cascade
+[0m22:52:35.463961 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:52:35.466951 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: Close
+[0m22:52:35.469086 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e023e4610>]}
+[0m22:52:35.472934 [info ] [Thread-1 (]: 3 of 8 OK created sql view model public.exterior_features ...................... [[32mCREATE VIEW[0m in 0.15s]
+[0m22:52:35.475413 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.exterior_features
+[0m22:52:35.477890 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.interior_features
+[0m22:52:35.480111 [info ] [Thread-1 (]: 4 of 8 START sql view model public.interior_features ........................... [RUN]
+[0m22:52:35.481725 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.exterior_features, now model.vehicle_data_system.interior_features)
+[0m22:52:35.483194 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.interior_features
+[0m22:52:35.504005 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.interior_features"
+[0m22:52:35.506534 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.interior_features
+[0m22:52:35.537964 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.interior_features"
+[0m22:52:35.540782 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:52:35.550821 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: BEGIN
+[0m22:52:35.551734 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:52:35.569700 [debug] [Thread-1 (]: SQL status: BEGIN in 0.018 seconds
+[0m22:52:35.571278 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:52:35.572987 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.interior_features"} */
+
+  create view "vehicle_specs_db"."public"."interior_features__dbt_tmp"
+    
+    
+  as (
+    -- models/core/interior_features.sql
+
+SELECT
+    raw_id AS interior_feature_id,
+    (interior_json -> 'interiorColorOptions') AS interior_color_options,
+    (interior_json ->> 'seatingMaterial') AS seating_material,
+    (interior_json ->> 'infotainmentSystem') AS infotainment_system,
+    (interior_json ->> 'audioSystem') AS audio_system,
+    (interior_json ->> 'numberOfACZones')::INT AS number_of_ac_zones,
+    (interior_json ->> 'hasFrontSeatHeating')::BOOLEAN AS has_front_seat_heating,
+    (interior_json ->> 'hasRearSeatHeating')::BOOLEAN AS has_rear_seat_heating,
+    (interior_json ->> 'hasFrontSeatCooling')::BOOLEAN AS has_front_seat_cooling,
+    (interior_json ->> 'hasRearSeatCooling')::BOOLEAN AS has_rear_seat_cooling,
+    (interior_json ->> 'hasSteeringWheelHeating')::BOOLEAN AS has_steering_wheel_heating,
+    (interior_json ->> 'hasMassageSeats')::BOOLEAN AS has_massage_seats,
+    (interior_json ->> 'driverSeatAdjustment') AS driver_seat_adjustment,
+    (interior_json ->> 'passengerSeatAdjustment') AS passenger_seat_adjustment,
+    (interior_json ->> 'rearSeatAdjustment') AS rear_seat_adjustment,
+    (interior_json ->> 'rearSeatType') AS rear_seat_type,
+    (interior_json ->> 'hasRearSeatHeadrests')::BOOLEAN AS has_rear_seat_headrests,
+    (interior_json ->> 'screenSizeInches')::NUMERIC AS screen_size_inches,
+    (interior_json ->> 'hasNavigationSystem')::BOOLEAN AS has_navigation_system,
+    (interior_json ->> 'hasVoiceControl')::BOOLEAN AS has_voice_control,
+    (interior_json ->> 'hasWirelessCharging')::BOOLEAN AS has_wireless_charging,
+    (interior_json ->> 'hasHeadUpDisplay')::BOOLEAN AS has_head_up_display,
+    (interior_json ->> 'hasKeylessEntry')::BOOLEAN AS has_keyless_entry,
+    (interior_json ->> 'hasPushButtonStart')::BOOLEAN AS has_push_button_start
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:52:35.623814 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.049 seconds
+[0m22:52:35.641786 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:52:35.643147 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.interior_features"} */
+alter table "vehicle_specs_db"."public"."interior_features__dbt_tmp" rename to "interior_features"
+[0m22:52:35.645580 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:52:35.657611 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: COMMIT
+[0m22:52:35.659064 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:52:35.660333 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: COMMIT
+[0m22:52:35.685911 [debug] [Thread-1 (]: SQL status: COMMIT in 0.024 seconds
+[0m22:52:35.694503 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."interior_features__dbt_backup"
+[0m22:52:35.707581 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:52:35.708955 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.interior_features"} */
+drop view if exists "vehicle_specs_db"."public"."interior_features__dbt_backup" cascade
+[0m22:52:35.711197 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:52:35.723802 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: Close
+[0m22:52:35.725657 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e023f0c90>]}
+[0m22:52:35.727499 [info ] [Thread-1 (]: 4 of 8 OK created sql view model public.interior_features ...................... [[32mCREATE VIEW[0m in 0.24s]
+[0m22:52:35.739223 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.interior_features
+[0m22:52:35.740676 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.performance_specs
+[0m22:52:35.742356 [info ] [Thread-1 (]: 5 of 8 START sql view model public.performance_specs ........................... [RUN]
+[0m22:52:35.755002 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.interior_features, now model.vehicle_data_system.performance_specs)
+[0m22:52:35.756230 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.performance_specs
+[0m22:52:35.772308 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.performance_specs"
+[0m22:52:35.778388 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.performance_specs
+[0m22:52:35.794476 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.performance_specs"
+[0m22:52:35.796430 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:52:35.797520 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: BEGIN
+[0m22:52:35.798564 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:52:35.901089 [debug] [Thread-1 (]: SQL status: BEGIN in 0.102 seconds
+[0m22:52:35.902398 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:52:35.903687 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.performance_specs"} */
+
+  create view "vehicle_specs_db"."public"."performance_specs__dbt_tmp"
+    
+    
+  as (
+    -- models/core/performance_specs.sql
+
+SELECT
+    raw_id AS performance_id,
+    (performance_json ->> 'engineType') AS engine_type,
+    (performance_json ->> 'displacementCC')::INT AS displacement_cc,
+    (performance_json ->> 'horsepower')::INT AS horsepower,
+    (performance_json ->> 'torqueNm')::INT AS torque_nm,
+    (performance_json ->> 'zeroToHundredKmHTimeSeconds')::NUMERIC AS zero_to_hundred_kmh_time_seconds,
+    (performance_json ->> 'topSpeedKmH')::INT AS top_speed_kmh,
+    (performance_json ->> 'transmissionType') AS transmission_type,
+    (performance_json ->> 'numberOfGears')::INT AS number_of_gears,
+    (performance_json ->> 'driveType') AS drive_type,
+    (performance_json ->> 'fuelType') AS fuel_type,
+    (performance_json ->> 'fuelEconomyCityLPer100km')::NUMERIC AS fuel_economy_city_l_per_100km,
+    (performance_json ->> 'fuelEconomyHighwayLPer100km')::NUMERIC AS fuel_economy_highway_l_per_100km,
+    (performance_json ->> 'fuelEconomyCombinedLPer100km')::NUMERIC AS fuel_economy_combined_l_per_100km,
+    (performance_json ->> 'batteryCapacityKWh')::NUMERIC AS battery_capacity_kwh,
+    (performance_json ->> 'electricRangeKm')::INT AS electric_range_km,
+    (performance_json ->> 'brakingDistance100To0KmH')::NUMERIC AS braking_distance_100_to_0_kmh,
+    (performance_json ->> 'suspensionType') AS suspension_type,
+    (performance_json ->> 'CO2EmissionsGramsPerKm')::NUMERIC AS co2_emissions_grams_per_km
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:52:35.913022 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.008 seconds
+[0m22:52:35.925547 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:52:35.926554 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.performance_specs"} */
+alter table "vehicle_specs_db"."public"."performance_specs__dbt_tmp" rename to "performance_specs"
+[0m22:52:35.937825 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.010 seconds
+[0m22:52:35.941791 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: COMMIT
+[0m22:52:35.943098 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:52:35.944300 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: COMMIT
+[0m22:52:35.948032 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m22:52:35.957604 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."performance_specs__dbt_backup"
+[0m22:52:35.960357 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:52:35.961773 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.performance_specs"} */
+drop view if exists "vehicle_specs_db"."public"."performance_specs__dbt_backup" cascade
+[0m22:52:35.963762 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:52:35.966641 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: Close
+[0m22:52:35.973282 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e03567d10>]}
+[0m22:52:35.975087 [info ] [Thread-1 (]: 5 of 8 OK created sql view model public.performance_specs ...................... [[32mCREATE VIEW[0m in 0.22s]
+[0m22:52:35.976975 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.performance_specs
+[0m22:52:35.990064 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.pricing_availability
+[0m22:52:35.991796 [info ] [Thread-1 (]: 6 of 8 START sql view model public.pricing_availability ........................ [RUN]
+[0m22:52:35.993223 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.performance_specs, now model.vehicle_data_system.pricing_availability)
+[0m22:52:35.994713 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.pricing_availability
+[0m22:52:36.009468 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.pricing_availability"
+[0m22:52:36.011294 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.pricing_availability
+[0m22:52:36.029441 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.pricing_availability"
+[0m22:52:36.031538 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:52:36.039229 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: BEGIN
+[0m22:52:36.041238 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:52:36.050684 [debug] [Thread-1 (]: SQL status: BEGIN in 0.009 seconds
+[0m22:52:36.054727 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:52:36.058155 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.pricing_availability"} */
+
+  create view "vehicle_specs_db"."public"."pricing_availability__dbt_tmp"
+    
+    
+  as (
+    -- models/core/pricing_availability.sql
+
+SELECT
+    raw_id AS pricing_availability_id,
+    (pricing_availability_json ->> 'msrpCAD')::NUMERIC AS msrp_cad,
+    (pricing_availability_json -> 'availablePackages') AS available_packages,
+    (pricing_availability_json ->> 'warrantyKmYears') AS warranty_km_years,
+    (pricing_availability_json ->> 'availableInCanada')::BOOLEAN AS available_in_canada,
+    (pricing_availability_json ->> 'releaseDate')::DATE AS release_date
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:52:36.070532 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.011 seconds
+[0m22:52:36.082939 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:52:36.083963 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.pricing_availability"} */
+alter table "vehicle_specs_db"."public"."pricing_availability__dbt_tmp" rename to "pricing_availability"
+[0m22:52:36.086302 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:52:36.100378 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: COMMIT
+[0m22:52:36.101440 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:52:36.102390 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: COMMIT
+[0m22:52:36.105827 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m22:52:36.114041 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."pricing_availability__dbt_backup"
+[0m22:52:36.115694 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:52:36.116413 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.pricing_availability"} */
+drop view if exists "vehicle_specs_db"."public"."pricing_availability__dbt_backup" cascade
+[0m22:52:36.120777 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:52:36.124859 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: Close
+[0m22:52:36.126750 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e00a53490>]}
+[0m22:52:36.129094 [info ] [Thread-1 (]: 6 of 8 OK created sql view model public.pricing_availability ................... [[32mCREATE VIEW[0m in 0.13s]
+[0m22:52:36.133719 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.pricing_availability
+[0m22:52:36.136122 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.safety_features
+[0m22:52:36.138264 [info ] [Thread-1 (]: 7 of 8 START sql view model public.safety_features ............................. [RUN]
+[0m22:52:36.139948 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.pricing_availability, now model.vehicle_data_system.safety_features)
+[0m22:52:36.141318 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.safety_features
+[0m22:52:36.158388 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.safety_features"
+[0m22:52:36.173884 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.safety_features
+[0m22:52:36.186305 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.safety_features"
+[0m22:52:36.191580 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:52:36.193249 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: BEGIN
+[0m22:52:36.194885 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:52:36.213919 [debug] [Thread-1 (]: SQL status: BEGIN in 0.019 seconds
+[0m22:52:36.219686 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:52:36.220997 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.safety_features"} */
+
+  create view "vehicle_specs_db"."public"."safety_features__dbt_tmp"
+    
+    
+  as (
+    -- models/core/safety_features.sql
+
+SELECT
+    raw_id AS safety_feature_id,
+    (safety_driver_assistance_json ->> 'numberOfAirbags')::INT AS number_of_airbags,
+    (safety_driver_assistance_json ->> 'abs')::BOOLEAN AS abs,
+    (safety_driver_assistance_json ->> 'tractionControl')::BOOLEAN AS traction_control,
+    (safety_driver_assistance_json ->> 'stabilityControl')::BOOLEAN AS stability_control,
+    (safety_driver_assistance_json ->> 'backupCamera')::BOOLEAN AS backup_camera,
+    (safety_driver_assistance_json ->> 'parkingSensors')::BOOLEAN AS parking_sensors,
+    (safety_driver_assistance_json ->> 'blindSpotMonitoring')::BOOLEAN AS blind_spot_monitoring,
+    (safety_driver_assistance_json ->> 'laneDepartureWarning')::BOOLEAN AS lane_departure_warning,
+    (safety_driver_assistance_json ->> 'adaptiveCruiseControl')::BOOLEAN AS adaptive_cruise_control,
+    (safety_driver_assistance_json ->> 'safetyRatings') AS safety_ratings,
+    (safety_driver_assistance_json ->> 'hasCrossTrafficAlert')::BOOLEAN AS has_cross_traffic_alert,
+    (safety_driver_assistance_json ->> 'hasAutomaticEmergencyBraking')::BOOLEAN AS has_automatic_emergency_braking,
+    (safety_driver_assistance_json ->> 'hasLaneKeepingAssist')::BOOLEAN AS has_lane_keeping_assist,
+    (safety_driver_assistance_json ->> 'hasDriverAttentionMonitor')::BOOLEAN AS has_driver_attention_monitor,
+    (safety_driver_assistance_json ->> 'has360Camera')::BOOLEAN AS has_360_camera,
+    (safety_driver_assistance_json ->> 'hasParkingAssist')::BOOLEAN AS has_parking_assist
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:52:36.228237 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.006 seconds
+[0m22:52:36.238141 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:52:36.239429 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.safety_features"} */
+alter table "vehicle_specs_db"."public"."safety_features__dbt_tmp" rename to "safety_features"
+[0m22:52:36.241722 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:52:36.245899 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: COMMIT
+[0m22:52:36.247299 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:52:36.249370 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: COMMIT
+[0m22:52:36.255447 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m22:52:36.270942 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."safety_features__dbt_backup"
+[0m22:52:36.273007 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:52:36.274049 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.safety_features"} */
+drop view if exists "vehicle_specs_db"."public"."safety_features__dbt_backup" cascade
+[0m22:52:36.276201 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:52:36.279479 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: Close
+[0m22:52:36.280874 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e024f6990>]}
+[0m22:52:36.283075 [info ] [Thread-1 (]: 7 of 8 OK created sql view model public.safety_features ........................ [[32mCREATE VIEW[0m in 0.14s]
+[0m22:52:36.287805 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.safety_features
+[0m22:52:36.289470 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.vehicle_trims
+[0m22:52:36.294255 [info ] [Thread-1 (]: 8 of 8 START sql view model public.vehicle_trims ............................... [RUN]
+[0m22:52:36.295814 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.safety_features, now model.vehicle_data_system.vehicle_trims)
+[0m22:52:36.297063 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.vehicle_trims
+[0m22:52:36.314453 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.vehicle_trims"
+[0m22:52:36.364387 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.vehicle_trims
+[0m22:52:36.384678 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.vehicle_trims"
+[0m22:52:36.476596 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:52:36.477889 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: BEGIN
+[0m22:52:36.479075 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:52:36.489326 [debug] [Thread-1 (]: SQL status: BEGIN in 0.010 seconds
+[0m22:52:36.490619 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:52:36.491762 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.vehicle_trims"} */
+
+  create view "vehicle_specs_db"."public"."vehicle_trims__dbt_tmp"
+    
+    
+  as (
+    -- models/core/vehicle_trims.sql
+
+SELECT
+    raw_id AS vehicle_trim_id,
+    make,
+    model,
+    year,
+    trim_name,
+    vehicle_type,
+    country_of_origin,
+    assembly_plant_location,
+    additional_features_json
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:52:36.499388 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.007 seconds
+[0m22:52:36.506488 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:52:36.516813 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.vehicle_trims"} */
+alter table "vehicle_specs_db"."public"."vehicle_trims__dbt_tmp" rename to "vehicle_trims"
+[0m22:52:36.519598 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:52:36.523959 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: COMMIT
+[0m22:52:36.525333 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:52:36.526561 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: COMMIT
+[0m22:52:36.535447 [debug] [Thread-1 (]: SQL status: COMMIT in 0.007 seconds
+[0m22:52:36.544193 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."vehicle_trims__dbt_backup"
+[0m22:52:36.547839 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:52:36.549468 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.vehicle_trims"} */
+drop view if exists "vehicle_specs_db"."public"."vehicle_trims__dbt_backup" cascade
+[0m22:52:36.551706 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:52:36.554692 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: Close
+[0m22:52:36.556618 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4edb8a4-019d-4f2a-b7d5-4863c2dc56da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e00a11ad0>]}
+[0m22:52:36.558504 [info ] [Thread-1 (]: 8 of 8 OK created sql view model public.vehicle_trims .......................... [[32mCREATE VIEW[0m in 0.26s]
+[0m22:52:36.560448 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.vehicle_trims
+[0m22:52:36.574255 [debug] [MainThread]: Using postgres connection "master"
+[0m22:52:36.575409 [debug] [MainThread]: On master: BEGIN
+[0m22:52:36.576647 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:52:36.586418 [debug] [MainThread]: SQL status: BEGIN in 0.010 seconds
+[0m22:52:36.587528 [debug] [MainThread]: On master: COMMIT
+[0m22:52:36.588472 [debug] [MainThread]: Using postgres connection "master"
+[0m22:52:36.589509 [debug] [MainThread]: On master: COMMIT
+[0m22:52:36.591088 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m22:52:36.592257 [debug] [MainThread]: On master: Close
+[0m22:52:36.593752 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:52:36.600070 [debug] [MainThread]: Connection 'model.vehicle_data_system.vehicle_trims' was properly closed.
+[0m22:52:36.602231 [info ] [MainThread]: 
+[0m22:52:36.603732 [info ] [MainThread]: Finished running 8 view models in 0 hours 0 minutes and 2.18 seconds (2.18s).
+[0m22:52:36.610380 [debug] [MainThread]: Command end result
+[0m22:52:36.729527 [debug] [MainThread]: Wrote artifact WritableManifest to /home/raja/autodatastore/dbt_project/target/manifest.json
+[0m22:52:36.739630 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/raja/autodatastore/dbt_project/target/semantic_manifest.json
+[0m22:52:36.759487 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/raja/autodatastore/dbt_project/target/run_results.json
+[0m22:52:36.760588 [info ] [MainThread]: 
+[0m22:52:36.761783 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:52:36.762954 [info ] [MainThread]: 
+[0m22:52:36.764218 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=8
+[0m22:52:36.766778 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.113765, "process_in_blocks": "1296", "process_kernel_time": 0.873517, "process_mem_max_rss": "139996", "process_out_blocks": "2376", "process_user_time": 8.389832}
+[0m22:52:36.768840 [debug] [MainThread]: Command `dbt run` succeeded at 22:52:36.768509 after 4.12 seconds
+[0m22:52:36.769914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e051c7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e062add90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e0247be10>]}
+[0m22:52:36.773442 [debug] [MainThread]: Flushing usage events
+[0m22:52:37.067020 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:54:53.188686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef68353c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef692e7ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef6847e750>]}
+
+
+============================== 22:54:53.197996 | 5a812883-f212-4b0e-a1f4-7f001121a3f1 ==============================
+[0m22:54:53.197996 [info ] [MainThread]: Running with dbt=1.10.4
+[0m22:54:53.199057 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/raja/autodatastore/dbt_project', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/raja/autodatastore/dbt_project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:54:53.629183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef6848c450>]}
+[0m22:54:53.769830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef6ae7f2d0>]}
+[0m22:54:53.770806 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m22:54:53.950182 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m22:54:54.214630 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:54:54.216481 [debug] [MainThread]: Partial parsing: updated file: vehicle_data_system://models/core/vehicle_trims.sql
+[0m22:54:55.113343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef67908e10>]}
+[0m22:54:55.244598 [debug] [MainThread]: Wrote artifact WritableManifest to /home/raja/autodatastore/dbt_project/target/manifest.json
+[0m22:54:55.248976 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/raja/autodatastore/dbt_project/target/semantic_manifest.json
+[0m22:54:55.278525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef679443d0>]}
+[0m22:54:55.279458 [info ] [MainThread]: Found 8 models, 26 data tests, 434 macros
+[0m22:54:55.280207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef6692d250>]}
+[0m22:54:55.286305 [info ] [MainThread]: 
+[0m22:54:55.288093 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:54:55.289446 [info ] [MainThread]: 
+[0m22:54:55.293139 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:54:55.309884 [debug] [ThreadPool]: Acquiring new postgres connection 'list_vehicle_specs_db'
+[0m22:54:55.420585 [debug] [ThreadPool]: Using postgres connection "list_vehicle_specs_db"
+[0m22:54:55.424815 [debug] [ThreadPool]: On list_vehicle_specs_db: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "connection_name": "list_vehicle_specs_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:54:55.427607 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:54:55.458854 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.031 seconds
+[0m22:54:55.462174 [debug] [ThreadPool]: On list_vehicle_specs_db: Close
+[0m22:54:55.467748 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_vehicle_specs_db, now list_vehicle_specs_db_public)
+[0m22:54:55.512417 [debug] [ThreadPool]: Using postgres connection "list_vehicle_specs_db_public"
+[0m22:54:55.513823 [debug] [ThreadPool]: On list_vehicle_specs_db_public: BEGIN
+[0m22:54:55.515241 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:54:55.567905 [debug] [ThreadPool]: SQL status: BEGIN in 0.053 seconds
+[0m22:54:55.569076 [debug] [ThreadPool]: Using postgres connection "list_vehicle_specs_db_public"
+[0m22:54:55.570081 [debug] [ThreadPool]: On list_vehicle_specs_db_public: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "connection_name": "list_vehicle_specs_db_public"} */
+select
+      'vehicle_specs_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'vehicle_specs_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'vehicle_specs_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m22:54:55.588726 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.018 seconds
+[0m22:54:55.592477 [debug] [ThreadPool]: On list_vehicle_specs_db_public: ROLLBACK
+[0m22:54:55.594355 [debug] [ThreadPool]: On list_vehicle_specs_db_public: Close
+[0m22:54:55.618447 [debug] [MainThread]: Using postgres connection "master"
+[0m22:54:55.619479 [debug] [MainThread]: On master: BEGIN
+[0m22:54:55.620423 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:54:55.728888 [debug] [MainThread]: SQL status: BEGIN in 0.108 seconds
+[0m22:54:55.729861 [debug] [MainThread]: Using postgres connection "master"
+[0m22:54:55.730892 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:54:55.815037 [debug] [MainThread]: SQL status: SELECT 8 in 0.074 seconds
+[0m22:54:55.821368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef67d4a510>]}
+[0m22:54:55.829889 [debug] [MainThread]: On master: ROLLBACK
+[0m22:54:55.831931 [debug] [MainThread]: Using postgres connection "master"
+[0m22:54:55.833145 [debug] [MainThread]: On master: BEGIN
+[0m22:54:55.835577 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m22:54:55.836765 [debug] [MainThread]: On master: COMMIT
+[0m22:54:55.838003 [debug] [MainThread]: Using postgres connection "master"
+[0m22:54:55.839150 [debug] [MainThread]: On master: COMMIT
+[0m22:54:55.849242 [debug] [MainThread]: SQL status: COMMIT in 0.009 seconds
+[0m22:54:55.850224 [debug] [MainThread]: On master: Close
+[0m22:54:55.870395 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.stg_vehicle_data
+[0m22:54:55.871857 [info ] [Thread-1 (]: 1 of 8 START sql view model public.stg_vehicle_data ............................ [RUN]
+[0m22:54:55.873529 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_vehicle_specs_db_public, now model.vehicle_data_system.stg_vehicle_data)
+[0m22:54:55.874885 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.stg_vehicle_data
+[0m22:54:55.921086 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.stg_vehicle_data"
+[0m22:54:55.923072 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.stg_vehicle_data
+[0m22:54:56.046056 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.stg_vehicle_data"
+[0m22:54:56.047373 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:54:56.048510 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: BEGIN
+[0m22:54:56.049148 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:54:56.059132 [debug] [Thread-1 (]: SQL status: BEGIN in 0.010 seconds
+[0m22:54:56.060215 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:54:56.061315 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.stg_vehicle_data"} */
+
+  create view "vehicle_specs_db"."public"."stg_vehicle_data__dbt_tmp"
+    
+    
+  as (
+    -- models/staging/stg_vehicle_data.sql
+
+WITH source_data AS (
+    SELECT
+        id,
+        ingestion_timestamp,
+        raw_json
+    FROM
+        raw_vehicle_data
+)
+
+SELECT
+    id AS raw_id,
+    ingestion_timestamp,
+    raw_json ->> 'make' AS make,
+    raw_json ->> 'model' AS model,
+    (raw_json ->> 'year')::INT AS year,
+    raw_json ->> 'trimName' AS trim_name,
+    raw_json ->> 'vehicleType' AS vehicle_type,
+    raw_json ->> 'countryOfOrigin' AS country_of_origin,
+    raw_json ->> 'assemblyPlantLocation' AS assembly_plant_location,
+    raw_json -> 'performance' AS performance_json,
+    raw_json -> 'dimensionsCapacity' AS dimensions_capacity_json,
+    raw_json -> 'exterior' AS exterior_json,
+    raw_json -> 'interior' AS interior_json,
+    raw_json -> 'safetyDriverAssistance' AS safety_driver_assistance_json,
+    raw_json -> 'pricingAvailability' AS pricing_availability_json,
+    raw_json -> 'additionalFeatures' AS additional_features_json
+FROM
+    source_data
+  );
+[0m22:54:56.069643 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.007 seconds
+[0m22:54:56.084665 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:54:56.086268 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.stg_vehicle_data"} */
+alter table "vehicle_specs_db"."public"."stg_vehicle_data" rename to "stg_vehicle_data__dbt_backup"
+[0m22:54:56.087979 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:54:56.093347 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:54:56.094858 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.stg_vehicle_data"} */
+alter table "vehicle_specs_db"."public"."stg_vehicle_data__dbt_tmp" rename to "stg_vehicle_data"
+[0m22:54:56.096815 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:54:56.130060 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: COMMIT
+[0m22:54:56.130817 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:54:56.131398 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: COMMIT
+[0m22:54:56.134902 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m22:54:56.148362 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."stg_vehicle_data__dbt_backup"
+[0m22:54:56.158876 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.stg_vehicle_data"
+[0m22:54:56.160076 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.stg_vehicle_data"} */
+drop view if exists "vehicle_specs_db"."public"."stg_vehicle_data__dbt_backup" cascade
+[0m22:54:56.169649 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.008 seconds
+[0m22:54:56.174878 [debug] [Thread-1 (]: On model.vehicle_data_system.stg_vehicle_data: Close
+[0m22:54:56.178641 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef643b9e10>]}
+[0m22:54:56.180278 [info ] [Thread-1 (]: 1 of 8 OK created sql view model public.stg_vehicle_data ....................... [[32mCREATE VIEW[0m in 0.30s]
+[0m22:54:56.182000 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.stg_vehicle_data
+[0m22:54:56.185406 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.dimensions_capacity
+[0m22:54:56.186845 [info ] [Thread-1 (]: 2 of 8 START sql view model public.dimensions_capacity ......................... [RUN]
+[0m22:54:56.188287 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.stg_vehicle_data, now model.vehicle_data_system.dimensions_capacity)
+[0m22:54:56.197666 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.dimensions_capacity
+[0m22:54:56.205974 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.dimensions_capacity"
+[0m22:54:56.208142 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.dimensions_capacity
+[0m22:54:56.237861 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.dimensions_capacity"
+[0m22:54:56.239687 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:54:56.250995 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: BEGIN
+[0m22:54:56.252213 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:54:56.290310 [debug] [Thread-1 (]: SQL status: BEGIN in 0.038 seconds
+[0m22:54:56.291623 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:54:56.292759 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.dimensions_capacity"} */
+
+  create view "vehicle_specs_db"."public"."dimensions_capacity__dbt_tmp"
+    
+    
+  as (
+    -- models/core/dimensions_capacity.sql
+
+SELECT
+    raw_id AS dimensions_capacity_id,
+    (dimensions_capacity_json ->> 'lengthMm')::INT AS length_mm,
+    (dimensions_capacity_json ->> 'widthMm')::INT AS width_mm,
+    (dimensions_capacity_json ->> 'heightMm')::INT AS height_mm,
+    (dimensions_capacity_json ->> 'wheelbaseMm')::INT AS wheelbase_mm,
+    (dimensions_capacity_json ->> 'curbWeightKg')::INT AS curb_weight_kg,
+    (dimensions_capacity_json ->> 'grossVehicleWeightRatingKg')::INT AS gross_vehicle_weight_rating_kg,
+    (dimensions_capacity_json ->> 'seatingCapacity')::INT AS seating_capacity,
+    (dimensions_capacity_json ->> 'numberOfDoors')::INT AS number_of_doors,
+    (dimensions_capacity_json ->> 'cargoVolumeLiters')::NUMERIC AS cargo_volume_liters,
+    (dimensions_capacity_json ->> 'towingCapacityKg')::INT AS towing_capacity_kg,
+    (dimensions_capacity_json ->> 'groundClearanceMm')::INT AS ground_clearance_mm
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:54:56.298305 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.004 seconds
+[0m22:54:56.310397 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:54:56.312328 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.dimensions_capacity"} */
+alter table "vehicle_specs_db"."public"."dimensions_capacity__dbt_tmp" rename to "dimensions_capacity"
+[0m22:54:56.315001 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:54:56.327217 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: COMMIT
+[0m22:54:56.328081 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:54:56.329215 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: COMMIT
+[0m22:54:56.332355 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m22:54:56.340002 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."dimensions_capacity__dbt_backup"
+[0m22:54:56.341773 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.dimensions_capacity"
+[0m22:54:56.344925 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.dimensions_capacity"} */
+drop view if exists "vehicle_specs_db"."public"."dimensions_capacity__dbt_backup" cascade
+[0m22:54:56.346623 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:54:56.349467 [debug] [Thread-1 (]: On model.vehicle_data_system.dimensions_capacity: Close
+[0m22:54:56.350778 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef64222950>]}
+[0m22:54:56.353230 [info ] [Thread-1 (]: 2 of 8 OK created sql view model public.dimensions_capacity .................... [[32mCREATE VIEW[0m in 0.16s]
+[0m22:54:56.355289 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.dimensions_capacity
+[0m22:54:56.356717 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.exterior_features
+[0m22:54:56.358651 [info ] [Thread-1 (]: 3 of 8 START sql view model public.exterior_features ........................... [RUN]
+[0m22:54:56.359940 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.dimensions_capacity, now model.vehicle_data_system.exterior_features)
+[0m22:54:56.360992 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.exterior_features
+[0m22:54:56.369205 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.exterior_features"
+[0m22:54:56.370360 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.exterior_features
+[0m22:54:56.385317 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.exterior_features"
+[0m22:54:56.387336 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:54:56.388551 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: BEGIN
+[0m22:54:56.389734 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:54:56.406944 [debug] [Thread-1 (]: SQL status: BEGIN in 0.017 seconds
+[0m22:54:56.408349 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:54:56.410118 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.exterior_features"} */
+
+  create view "vehicle_specs_db"."public"."exterior_features__dbt_tmp"
+    
+    
+  as (
+    -- models/core/exterior_features.sql
+
+SELECT
+    raw_id AS exterior_feature_id,
+    (exterior_json ->> 'bodyStyle') AS body_style,
+    (exterior_json ->> 'wheelSizeInches')::NUMERIC AS wheel_size_inches,
+    (exterior_json ->> 'tireDimensions') AS tire_dimensions,
+    (exterior_json ->> 'tireType') AS tire_type,
+    (exterior_json -> 'exteriorColorOptions') AS exterior_color_options,
+    (exterior_json ->> 'headlightType') AS headlight_type,
+    (exterior_json -> 'headlightFeatures') AS headlight_features,
+    (exterior_json ->> 'tailLightType') AS tail_light_type,
+    (exterior_json -> 'tailLightFeatures') AS tail_light_features,
+    (exterior_json ->> 'sunroofType') AS sunroof_type,
+    (exterior_json ->> 'hasPowerLiftgate')::BOOLEAN AS has_power_liftgate
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:54:56.419187 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.007 seconds
+[0m22:54:56.427077 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:54:56.428203 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.exterior_features"} */
+alter table "vehicle_specs_db"."public"."exterior_features__dbt_tmp" rename to "exterior_features"
+[0m22:54:56.430486 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:54:56.436714 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: COMMIT
+[0m22:54:56.437575 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:54:56.439096 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: COMMIT
+[0m22:54:56.442744 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m22:54:56.450075 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."exterior_features__dbt_backup"
+[0m22:54:56.451142 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.exterior_features"
+[0m22:54:56.451834 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.exterior_features"} */
+drop view if exists "vehicle_specs_db"."public"."exterior_features__dbt_backup" cascade
+[0m22:54:56.455853 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:54:56.458840 [debug] [Thread-1 (]: On model.vehicle_data_system.exterior_features: Close
+[0m22:54:56.460212 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef642dc690>]}
+[0m22:54:56.461574 [info ] [Thread-1 (]: 3 of 8 OK created sql view model public.exterior_features ...................... [[32mCREATE VIEW[0m in 0.10s]
+[0m22:54:56.465058 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.exterior_features
+[0m22:54:56.466416 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.interior_features
+[0m22:54:56.467913 [info ] [Thread-1 (]: 4 of 8 START sql view model public.interior_features ........................... [RUN]
+[0m22:54:56.469164 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.exterior_features, now model.vehicle_data_system.interior_features)
+[0m22:54:56.470481 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.interior_features
+[0m22:54:56.478680 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.interior_features"
+[0m22:54:56.480507 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.interior_features
+[0m22:54:56.493067 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.interior_features"
+[0m22:54:56.495263 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:54:56.496630 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: BEGIN
+[0m22:54:56.497328 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:54:56.505634 [debug] [Thread-1 (]: SQL status: BEGIN in 0.008 seconds
+[0m22:54:56.506801 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:54:56.507726 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.interior_features"} */
+
+  create view "vehicle_specs_db"."public"."interior_features__dbt_tmp"
+    
+    
+  as (
+    -- models/core/interior_features.sql
+
+SELECT
+    raw_id AS interior_feature_id,
+    (interior_json -> 'interiorColorOptions') AS interior_color_options,
+    (interior_json ->> 'seatingMaterial') AS seating_material,
+    (interior_json ->> 'infotainmentSystem') AS infotainment_system,
+    (interior_json ->> 'audioSystem') AS audio_system,
+    (interior_json ->> 'numberOfACZones')::INT AS number_of_ac_zones,
+    (interior_json ->> 'hasFrontSeatHeating')::BOOLEAN AS has_front_seat_heating,
+    (interior_json ->> 'hasRearSeatHeating')::BOOLEAN AS has_rear_seat_heating,
+    (interior_json ->> 'hasFrontSeatCooling')::BOOLEAN AS has_front_seat_cooling,
+    (interior_json ->> 'hasRearSeatCooling')::BOOLEAN AS has_rear_seat_cooling,
+    (interior_json ->> 'hasSteeringWheelHeating')::BOOLEAN AS has_steering_wheel_heating,
+    (interior_json ->> 'hasMassageSeats')::BOOLEAN AS has_massage_seats,
+    (interior_json ->> 'driverSeatAdjustment') AS driver_seat_adjustment,
+    (interior_json ->> 'passengerSeatAdjustment') AS passenger_seat_adjustment,
+    (interior_json ->> 'rearSeatAdjustment') AS rear_seat_adjustment,
+    (interior_json ->> 'rearSeatType') AS rear_seat_type,
+    (interior_json ->> 'hasRearSeatHeadrests')::BOOLEAN AS has_rear_seat_headrests,
+    (interior_json ->> 'screenSizeInches')::NUMERIC AS screen_size_inches,
+    (interior_json ->> 'hasNavigationSystem')::BOOLEAN AS has_navigation_system,
+    (interior_json ->> 'hasVoiceControl')::BOOLEAN AS has_voice_control,
+    (interior_json ->> 'hasWirelessCharging')::BOOLEAN AS has_wireless_charging,
+    (interior_json ->> 'hasHeadUpDisplay')::BOOLEAN AS has_head_up_display,
+    (interior_json ->> 'hasKeylessEntry')::BOOLEAN AS has_keyless_entry,
+    (interior_json ->> 'hasPushButtonStart')::BOOLEAN AS has_push_button_start
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:54:56.514586 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.006 seconds
+[0m22:54:56.520575 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:54:56.521255 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.interior_features"} */
+alter table "vehicle_specs_db"."public"."interior_features__dbt_tmp" rename to "interior_features"
+[0m22:54:56.523480 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:54:56.532108 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: COMMIT
+[0m22:54:56.533538 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:54:56.534838 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: COMMIT
+[0m22:54:56.543914 [debug] [Thread-1 (]: SQL status: COMMIT in 0.008 seconds
+[0m22:54:56.553458 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."interior_features__dbt_backup"
+[0m22:54:56.555742 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.interior_features"
+[0m22:54:56.557029 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.interior_features"} */
+drop view if exists "vehicle_specs_db"."public"."interior_features__dbt_backup" cascade
+[0m22:54:56.559415 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:54:56.570146 [debug] [Thread-1 (]: On model.vehicle_data_system.interior_features: Close
+[0m22:54:56.571952 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef642a2450>]}
+[0m22:54:56.574305 [info ] [Thread-1 (]: 4 of 8 OK created sql view model public.interior_features ...................... [[32mCREATE VIEW[0m in 0.10s]
+[0m22:54:56.576118 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.interior_features
+[0m22:54:56.577440 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.performance_specs
+[0m22:54:56.579193 [info ] [Thread-1 (]: 5 of 8 START sql view model public.performance_specs ........................... [RUN]
+[0m22:54:56.585223 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.interior_features, now model.vehicle_data_system.performance_specs)
+[0m22:54:56.589793 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.performance_specs
+[0m22:54:56.597114 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.performance_specs"
+[0m22:54:56.598648 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.performance_specs
+[0m22:54:56.618097 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.performance_specs"
+[0m22:54:56.624739 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:54:56.627468 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: BEGIN
+[0m22:54:56.628622 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:54:56.637754 [debug] [Thread-1 (]: SQL status: BEGIN in 0.009 seconds
+[0m22:54:56.639211 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:54:56.640839 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.performance_specs"} */
+
+  create view "vehicle_specs_db"."public"."performance_specs__dbt_tmp"
+    
+    
+  as (
+    -- models/core/performance_specs.sql
+
+SELECT
+    raw_id AS performance_id,
+    (performance_json ->> 'engineType') AS engine_type,
+    (performance_json ->> 'displacementCC')::INT AS displacement_cc,
+    (performance_json ->> 'horsepower')::INT AS horsepower,
+    (performance_json ->> 'torqueNm')::INT AS torque_nm,
+    (performance_json ->> 'zeroToHundredKmHTimeSeconds')::NUMERIC AS zero_to_hundred_kmh_time_seconds,
+    (performance_json ->> 'topSpeedKmH')::INT AS top_speed_kmh,
+    (performance_json ->> 'transmissionType') AS transmission_type,
+    (performance_json ->> 'numberOfGears')::INT AS number_of_gears,
+    (performance_json ->> 'driveType') AS drive_type,
+    (performance_json ->> 'fuelType') AS fuel_type,
+    (performance_json ->> 'fuelEconomyCityLPer100km')::NUMERIC AS fuel_economy_city_l_per_100km,
+    (performance_json ->> 'fuelEconomyHighwayLPer100km')::NUMERIC AS fuel_economy_highway_l_per_100km,
+    (performance_json ->> 'fuelEconomyCombinedLPer100km')::NUMERIC AS fuel_economy_combined_l_per_100km,
+    (performance_json ->> 'batteryCapacityKWh')::NUMERIC AS battery_capacity_kwh,
+    (performance_json ->> 'electricRangeKm')::INT AS electric_range_km,
+    (performance_json ->> 'brakingDistance100To0KmH')::NUMERIC AS braking_distance_100_to_0_kmh,
+    (performance_json ->> 'suspensionType') AS suspension_type,
+    (performance_json ->> 'CO2EmissionsGramsPerKm')::NUMERIC AS co2_emissions_grams_per_km
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:54:56.647449 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.005 seconds
+[0m22:54:56.660009 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:54:56.661142 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.performance_specs"} */
+alter table "vehicle_specs_db"."public"."performance_specs__dbt_tmp" rename to "performance_specs"
+[0m22:54:56.663145 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:54:56.675897 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: COMMIT
+[0m22:54:56.689129 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:54:56.690561 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: COMMIT
+[0m22:54:56.723723 [debug] [Thread-1 (]: SQL status: COMMIT in 0.032 seconds
+[0m22:54:56.735437 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."performance_specs__dbt_backup"
+[0m22:54:56.742680 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.performance_specs"
+[0m22:54:56.744058 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.performance_specs"} */
+drop view if exists "vehicle_specs_db"."public"."performance_specs__dbt_backup" cascade
+[0m22:54:56.746345 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:54:56.759930 [debug] [Thread-1 (]: On model.vehicle_data_system.performance_specs: Close
+[0m22:54:56.761492 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef66126910>]}
+[0m22:54:56.763429 [info ] [Thread-1 (]: 5 of 8 OK created sql view model public.performance_specs ...................... [[32mCREATE VIEW[0m in 0.18s]
+[0m22:54:56.765473 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.performance_specs
+[0m22:54:56.766893 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.pricing_availability
+[0m22:54:56.768716 [info ] [Thread-1 (]: 6 of 8 START sql view model public.pricing_availability ........................ [RUN]
+[0m22:54:56.775091 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.performance_specs, now model.vehicle_data_system.pricing_availability)
+[0m22:54:56.779168 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.pricing_availability
+[0m22:54:56.788863 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.pricing_availability"
+[0m22:54:56.791786 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.pricing_availability
+[0m22:54:56.805012 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.pricing_availability"
+[0m22:54:56.807038 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:54:56.808460 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: BEGIN
+[0m22:54:56.809369 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:54:56.819449 [debug] [Thread-1 (]: SQL status: BEGIN in 0.010 seconds
+[0m22:54:56.820340 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:54:56.821135 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.pricing_availability"} */
+
+  create view "vehicle_specs_db"."public"."pricing_availability__dbt_tmp"
+    
+    
+  as (
+    -- models/core/pricing_availability.sql
+
+SELECT
+    raw_id AS pricing_availability_id,
+    (pricing_availability_json ->> 'msrpCAD')::NUMERIC AS msrp_cad,
+    (pricing_availability_json -> 'availablePackages') AS available_packages,
+    (pricing_availability_json ->> 'warrantyKmYears') AS warranty_km_years,
+    (pricing_availability_json ->> 'availableInCanada')::BOOLEAN AS available_in_canada,
+    (pricing_availability_json ->> 'releaseDate')::DATE AS release_date
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:54:56.826987 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.005 seconds
+[0m22:54:56.839440 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:54:56.841782 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.pricing_availability"} */
+alter table "vehicle_specs_db"."public"."pricing_availability__dbt_tmp" rename to "pricing_availability"
+[0m22:54:56.845147 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m22:54:56.851489 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: COMMIT
+[0m22:54:56.853242 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:54:56.854701 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: COMMIT
+[0m22:54:56.866936 [debug] [Thread-1 (]: SQL status: COMMIT in 0.009 seconds
+[0m22:54:56.877059 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."pricing_availability__dbt_backup"
+[0m22:54:56.879183 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.pricing_availability"
+[0m22:54:56.880018 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.pricing_availability"} */
+drop view if exists "vehicle_specs_db"."public"."pricing_availability__dbt_backup" cascade
+[0m22:54:56.881876 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:54:56.885561 [debug] [Thread-1 (]: On model.vehicle_data_system.pricing_availability: Close
+[0m22:54:56.895742 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef64103590>]}
+[0m22:54:56.897674 [info ] [Thread-1 (]: 6 of 8 OK created sql view model public.pricing_availability ................... [[32mCREATE VIEW[0m in 0.12s]
+[0m22:54:56.899737 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.pricing_availability
+[0m22:54:56.901181 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.safety_features
+[0m22:54:56.903160 [info ] [Thread-1 (]: 7 of 8 START sql view model public.safety_features ............................. [RUN]
+[0m22:54:56.906538 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.pricing_availability, now model.vehicle_data_system.safety_features)
+[0m22:54:56.911426 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.safety_features
+[0m22:54:56.920138 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.safety_features"
+[0m22:54:56.925648 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.safety_features
+[0m22:54:56.936080 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.safety_features"
+[0m22:54:56.937710 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:54:56.939265 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: BEGIN
+[0m22:54:56.940627 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:54:56.950010 [debug] [Thread-1 (]: SQL status: BEGIN in 0.009 seconds
+[0m22:54:56.951217 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:54:56.952344 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.safety_features"} */
+
+  create view "vehicle_specs_db"."public"."safety_features__dbt_tmp"
+    
+    
+  as (
+    -- models/core/safety_features.sql
+
+SELECT
+    raw_id AS safety_feature_id,
+    (safety_driver_assistance_json ->> 'numberOfAirbags')::INT AS number_of_airbags,
+    (safety_driver_assistance_json ->> 'abs')::BOOLEAN AS abs,
+    (safety_driver_assistance_json ->> 'tractionControl')::BOOLEAN AS traction_control,
+    (safety_driver_assistance_json ->> 'stabilityControl')::BOOLEAN AS stability_control,
+    (safety_driver_assistance_json ->> 'backupCamera')::BOOLEAN AS backup_camera,
+    (safety_driver_assistance_json ->> 'parkingSensors')::BOOLEAN AS parking_sensors,
+    (safety_driver_assistance_json ->> 'blindSpotMonitoring')::BOOLEAN AS blind_spot_monitoring,
+    (safety_driver_assistance_json ->> 'laneDepartureWarning')::BOOLEAN AS lane_departure_warning,
+    (safety_driver_assistance_json ->> 'adaptiveCruiseControl')::BOOLEAN AS adaptive_cruise_control,
+    (safety_driver_assistance_json ->> 'safetyRatings') AS safety_ratings,
+    (safety_driver_assistance_json ->> 'hasCrossTrafficAlert')::BOOLEAN AS has_cross_traffic_alert,
+    (safety_driver_assistance_json ->> 'hasAutomaticEmergencyBraking')::BOOLEAN AS has_automatic_emergency_braking,
+    (safety_driver_assistance_json ->> 'hasLaneKeepingAssist')::BOOLEAN AS has_lane_keeping_assist,
+    (safety_driver_assistance_json ->> 'hasDriverAttentionMonitor')::BOOLEAN AS has_driver_attention_monitor,
+    (safety_driver_assistance_json ->> 'has360Camera')::BOOLEAN AS has_360_camera,
+    (safety_driver_assistance_json ->> 'hasParkingAssist')::BOOLEAN AS has_parking_assist
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data"
+  );
+[0m22:54:56.958008 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.004 seconds
+[0m22:54:56.968786 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:54:56.971047 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.safety_features"} */
+alter table "vehicle_specs_db"."public"."safety_features__dbt_tmp" rename to "safety_features"
+[0m22:54:56.974622 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m22:54:56.979831 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: COMMIT
+[0m22:54:56.981231 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:54:56.982794 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: COMMIT
+[0m22:54:57.001189 [debug] [Thread-1 (]: SQL status: COMMIT in 0.017 seconds
+[0m22:54:57.011125 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."safety_features__dbt_backup"
+[0m22:54:57.017182 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.safety_features"
+[0m22:54:57.018731 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.safety_features"} */
+drop view if exists "vehicle_specs_db"."public"."safety_features__dbt_backup" cascade
+[0m22:54:57.020992 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:54:57.024951 [debug] [Thread-1 (]: On model.vehicle_data_system.safety_features: Close
+[0m22:54:57.037000 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef64101910>]}
+[0m22:54:57.038924 [info ] [Thread-1 (]: 7 of 8 OK created sql view model public.safety_features ........................ [[32mCREATE VIEW[0m in 0.13s]
+[0m22:54:57.051618 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.safety_features
+[0m22:54:57.053278 [debug] [Thread-1 (]: Began running node model.vehicle_data_system.vehicle_trims
+[0m22:54:57.055266 [info ] [Thread-1 (]: 8 of 8 START sql materialized_view model public.vehicle_trims .................. [RUN]
+[0m22:54:57.056823 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.vehicle_data_system.safety_features, now model.vehicle_data_system.vehicle_trims)
+[0m22:54:57.062221 [debug] [Thread-1 (]: Began compiling node model.vehicle_data_system.vehicle_trims
+[0m22:54:57.075269 [debug] [Thread-1 (]: Writing injected SQL for node "model.vehicle_data_system.vehicle_trims"
+[0m22:54:57.077219 [debug] [Thread-1 (]: Began executing node model.vehicle_data_system.vehicle_trims
+[0m22:54:57.246330 [debug] [Thread-1 (]: Writing runtime sql for node "model.vehicle_data_system.vehicle_trims"
+[0m22:54:57.248330 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:54:57.249627 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: BEGIN
+[0m22:54:57.250834 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:54:57.346810 [debug] [Thread-1 (]: SQL status: BEGIN in 0.096 seconds
+[0m22:54:57.348053 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:54:57.349457 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.vehicle_trims"} */
+
+        
+    create materialized view if not exists "vehicle_specs_db"."public"."vehicle_trims" as -- models/core/vehicle_trims.sql
+
+
+
+SELECT
+    raw_id AS vehicle_trim_id,
+    make,
+    model,
+    year,
+    trim_name,
+    vehicle_type,
+    country_of_origin,
+    assembly_plant_location,
+    additional_features_json
+FROM
+    "vehicle_specs_db"."public"."stg_vehicle_data";
+
+    
+    
+[0m22:54:57.370973 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.020 seconds
+[0m22:54:57.375507 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: COMMIT
+[0m22:54:57.377068 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:54:57.378507 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: COMMIT
+[0m22:54:57.382623 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m22:54:57.394920 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."vehicle_trims__dbt_backup"
+[0m22:54:57.402116 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:54:57.403455 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.vehicle_trims"} */
+drop materialized view if exists "vehicle_specs_db"."public"."vehicle_trims__dbt_backup" cascade
+[0m22:54:57.414259 [debug] [Thread-1 (]: SQL status: DROP MATERIALIZED VIEW in 0.001 seconds
+[0m22:54:57.423049 [debug] [Thread-1 (]: Applying DROP to: "vehicle_specs_db"."public"."vehicle_trims__dbt_tmp"
+[0m22:54:57.427266 [debug] [Thread-1 (]: Using postgres connection "model.vehicle_data_system.vehicle_trims"
+[0m22:54:57.428389 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "vehicle_data_system", "target_name": "dev", "node_id": "model.vehicle_data_system.vehicle_trims"} */
+drop materialized view if exists "vehicle_specs_db"."public"."vehicle_trims__dbt_tmp" cascade
+[0m22:54:57.429899 [debug] [Thread-1 (]: SQL status: DROP MATERIALIZED VIEW in 0.001 seconds
+[0m22:54:57.432481 [debug] [Thread-1 (]: On model.vehicle_data_system.vehicle_trims: Close
+[0m22:54:57.434098 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a812883-f212-4b0e-a1f4-7f001121a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef665e0310>]}
+[0m22:54:57.436034 [info ] [Thread-1 (]: 8 of 8 OK created sql materialized_view model public.vehicle_trims ............. [[32mSELECT 1[0m in 0.38s]
+[0m22:54:57.438227 [debug] [Thread-1 (]: Finished running node model.vehicle_data_system.vehicle_trims
+[0m22:54:57.442376 [debug] [MainThread]: Using postgres connection "master"
+[0m22:54:57.448265 [debug] [MainThread]: On master: BEGIN
+[0m22:54:57.450847 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:54:57.465050 [debug] [MainThread]: SQL status: BEGIN in 0.014 seconds
+[0m22:54:57.474277 [debug] [MainThread]: On master: COMMIT
+[0m22:54:57.475230 [debug] [MainThread]: Using postgres connection "master"
+[0m22:54:57.476136 [debug] [MainThread]: On master: COMMIT
+[0m22:54:57.477911 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m22:54:57.479138 [debug] [MainThread]: On master: Close
+[0m22:54:57.480759 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:54:57.490468 [debug] [MainThread]: Connection 'model.vehicle_data_system.vehicle_trims' was properly closed.
+[0m22:54:57.491772 [info ] [MainThread]: 
+[0m22:54:57.493073 [info ] [MainThread]: Finished running 1 materialized view model, 7 view models in 0 hours 0 minutes and 2.20 seconds (2.20s).
+[0m22:54:57.497878 [debug] [MainThread]: Command end result
+[0m22:54:57.591065 [debug] [MainThread]: Wrote artifact WritableManifest to /home/raja/autodatastore/dbt_project/target/manifest.json
+[0m22:54:57.595019 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/raja/autodatastore/dbt_project/target/semantic_manifest.json
+[0m22:54:57.620938 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/raja/autodatastore/dbt_project/target/run_results.json
+[0m22:54:57.621905 [info ] [MainThread]: 
+[0m22:54:57.626717 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:54:57.627951 [info ] [MainThread]: 
+[0m22:54:57.629005 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=8
+[0m22:54:57.631133 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.5437503, "process_in_blocks": "0", "process_kernel_time": 0.801158, "process_mem_max_rss": "148896", "process_out_blocks": "3344", "process_user_time": 8.492283}
+[0m22:54:57.632501 [debug] [MainThread]: Command `dbt run` succeeded at 22:54:57.632263 after 4.55 seconds
+[0m22:54:57.633702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef68353bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef6a981250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fef6d557690>]}
+[0m22:54:57.634985 [debug] [MainThread]: Flushing usage events
+[0m22:54:57.888933 [debug] [MainThread]: An error was encountered while trying to flush usage events

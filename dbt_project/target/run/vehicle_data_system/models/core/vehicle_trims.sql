@@ -1,9 +1,8 @@
 
-  create view "vehicle_specs_db"."public"."vehicle_trims__dbt_tmp"
-    
-    
-  as (
-    -- models/core/vehicle_trims.sql
+        
+    create materialized view if not exists "vehicle_specs_db"."public"."vehicle_trims" as -- models/core/vehicle_trims.sql
+
+
 
 SELECT
     raw_id AS vehicle_trim_id,
@@ -16,5 +15,7 @@ SELECT
     assembly_plant_location,
     additional_features_json
 FROM
-    "vehicle_specs_db"."public"."stg_vehicle_data"
-  );
+    "vehicle_specs_db"."public"."stg_vehicle_data";
+
+    
+    

@@ -1,5 +1,7 @@
 -- models/core/vehicle_trims.sql
 
+
+
 SELECT
     raw_id AS vehicle_trim_id,
     make,

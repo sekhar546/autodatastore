@@ -48,7 +48,8 @@ This document outlines the detailed tasks required to implement the Vehicle Spec
         *   Identify potential raw data structures from anticipated sources.
         *   Write `CREATE TABLE` statements for staging tables (e.g., `raw_vehicle_data`).
         *   Execute SQL to create tables.
-    *   Status: [ ] To Do
+    *   Status: [x] Completed
+    *   Note: Used `uuid_generate_v4()` for UUID generation after enabling `uuid-ossp` extension.
 
 *   **Task: Implement dbt Models for Core Tables**
     *   Description: Translate the refined data model into dbt models (SQL files).
@@ -63,7 +64,8 @@ This document outlines the detailed tasks required to implement the Vehicle Spec
         *   Define `PricingAvailability` model (e.g., `pricing_availability.sql`).
         *   Ensure `id` fields are correctly generated (e.g., using `gen_random_uuid()` or `uuid_generate_v4()` in PostgreSQL).
         *   Implement relationships between models (e.g., foreign keys in dbt).
-    *   Status: [ ] To Do
+    *   Status: [x] Completed
+    *   Note: `vehicle_trims` model is materialized as a `materialized_view` for indexing.
 
 *   **Task: Add dbt Tests for Data Quality**
     *   Description: Implement dbt tests to ensure data integrity and quality.
@@ -91,7 +93,7 @@ This document outlines the detailed tasks required to implement the Vehicle Spec
         *   Write Python code to read data.
         *   Write Python code to insert data into PostgreSQL staging tables.
         *   Test script with sample data.
-    *   Status: [ ] To Do
+    *   Status: [x] Completed
 
 *   **Task: Integrate Python Ingestion with Airflow (if Airflow is used)**
     *   Description: Create an Airflow DAG to orchestrate the Python ingestion script.
@@ -109,7 +111,7 @@ This document outlines the detailed tasks required to implement the Vehicle Spec
         *   Use `BashOperator` or `DbtCloudOperator` (if using dbt Cloud) to run `dbt run` and `dbt test`.
         *   Set dependencies between ingestion and dbt tasks.
         *   Test DAG run.
-    *   Status: [ ] To Do
+    *   Status: [x] Completed
 
 ## 4. Data Consumption & Refinement (Sprint 4 - Value Delivery)
 
@@ -120,7 +122,7 @@ This document outlines the detailed tasks required to implement the Vehicle Spec
         *   Write SQL queries to retrieve vehicle data.
         *   Use `pandas` for data manipulation.
         *   Create basic visualizations (e.g., `matplotlib`, `seaborn`) for comparisons.
-    *   Status: [ ] To Do
+    *   Status: [x] Completed
 
 *   **Task: Refine `additionalFeatures` Handling**
     *   Description: Ensure the `additionalFeatures` JSONB field is effectively used and queried.
@@ -132,11 +134,11 @@ This document outlines the detailed tasks required to implement the Vehicle Spec
         *   Added JSONB field to `vehicle_trims` table to store flexible feature data
         *   Created GIN index for efficient querying:
             ```sql
-            CREATE INDEX idx_vehicle_features_gin ON vehicle_trims USING GIN (additional_features);
+            CREATE INDEX idx_vehicle_features_gin ON vehicle_trims USING GIN (additional_features_json);
             ```
         *   Example queries documented in `notebooks/exploratory_analysis.ipynb`:
-            - `SELECT * FROM vehicle_trims WHERE additional_features->>'hasSunroof' = 'true'`
-            - `SELECT jsonb_object_keys(additional_features) FROM vehicle_trims`
+            - `SELECT * FROM vehicle_trims WHERE additional_features_json->>'hasSunroof' = 'true'`
+            - `SELECT jsonb_object_keys(additional_features_json) FROM vehicle_trims`
 
 *   **Task: Performance Optimization (Initial)**
     *   Description: Basic performance considerations for data retrieval.
@@ -145,7 +147,7 @@ This document outlines the detailed tasks required to implement the Vehicle Spec
         *   Review dbt model performance.
     *   Status: [-] In Progress
     *   Completed:
-        *   GIN index created for JSONB field (see above)
+        *   GIN index created for JSONB field (`additional_features_json`)
 
 ## 5. Documentation & Project Management (Ongoing)
 
