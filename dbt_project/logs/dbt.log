@@ -5960,3 +5960,31 @@ drop materialized view if exists "vehicle_specs_db"."public"."vehicle_trims__dbt
 [0m00:07:17.026608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a7abb5250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a7ac12a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a7ae636d0>]}
 [0m00:07:17.027931 [debug] [MainThread]: Flushing usage events
 [0m00:07:17.199807 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:35:43.274257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9133a3ab50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9133a7c050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9133a38690>]}
+
+
+============================== 13:35:43.282501 | 8927c6f1-d229-4e3e-a6ae-b89ffc983df6 ==============================
+[0m13:35:43.282501 [info ] [MainThread]: Running with dbt=1.10.4
+[0m13:35:43.284166 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/raja/autodatastore/dbt_project', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/raja/autodatastore/dbt_project/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:35:43.703929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8927c6f1-d229-4e3e-a6ae-b89ffc983df6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f913391ccd0>]}
+[0m13:35:43.743968 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:35:43.749029 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:35:43.752135 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.7266934, "process_in_blocks": "288", "process_kernel_time": 0.724032, "process_mem_max_rss": "121432", "process_out_blocks": "8", "process_user_time": 8.18559}
+[0m13:35:43.753534 [debug] [MainThread]: Command `cli deps` succeeded at 13:35:43.753216 after 0.73 seconds
+[0m13:35:43.754713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9133a41250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9133aaa890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9133cc7210>]}
+[0m13:35:43.755664 [debug] [MainThread]: Flushing usage events
+[0m13:35:43.904082 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:38:11.162077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc615e0790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc617071d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc615e1b90>]}
+
+
+============================== 13:38:11.167385 | 9f958f22-3417-4165-9dc9-e08a3b894ea4 ==============================
+[0m13:38:11.167385 [info ] [MainThread]: Running with dbt=1.10.4
+[0m13:38:11.168555 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/raja/autodatastore/dbt_project/logs', 'profiles_dir': '/home/raja/autodatastore/dbt_project', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:38:11.385853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9f958f22-3417-4165-9dc9-e08a3b894ea4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc6198d010>]}
+[0m13:38:11.406851 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:38:11.409165 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:38:11.413585 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.34025615, "process_in_blocks": "0", "process_kernel_time": 0.493537, "process_mem_max_rss": "121500", "process_out_blocks": "16", "process_user_time": 5.569928}
+[0m13:38:11.417339 [debug] [MainThread]: Command `cli deps` succeeded at 13:38:11.417000 after 0.35 seconds
+[0m13:38:11.418200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc6198cc90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc615e15d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc6679f710>]}
+[0m13:38:11.418933 [debug] [MainThread]: Flushing usage events
+[0m13:38:11.561093 [debug] [MainThread]: An error was encountered while trying to flush usage events
